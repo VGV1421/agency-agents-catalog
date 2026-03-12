@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Agency — 99 Agentes IA para tu Negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .agent-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .agent-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .agent-card.expanded {
+            grid-column: span 2;
+        }
+        
+        @media (max-width: 768px) {
+            .agent-card.expanded {
+                grid-column: span 1;
+            }
+        }
+        
+        .category-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .modal-overlay {
+            backdrop-filter: blur(8px);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 scroll-smooth">
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6">
+                    🎭 The Agency
+                </h1>
+                <p class="text-xl md:text-2xl font-light mb-4 opacity-90">
+                    99 Agentes IA Especializados para Transformar tu Negocio
+                </p>
+                <p class="text-lg opacity-75 max-w-2xl mx-auto">
+                    Un equipo completo de expertos en IA listos para trabajar: desde desarrolladores hasta diseñadores, de marketers a estrategas.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="#catalogo" class="bg-white text-purple-700 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg">
+                        Ver Agentes
+                    </a>
+                    <a href="#contacto" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-700 transition">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <div class="bg-white shadow-md py-6">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-purple-600">99</div>
+                    <div class="text-sm text-gray-600">Agentes</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-purple-600">9</div>
+                    <div class="text-sm text-gray-600">Departamentos</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-purple-600">∞</div>
+                    <div class="text-sm text-gray-600">Posibilidades</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-purple-600">24/7</div>
+                    <div class="text-sm text-gray-600">Disponibilidad</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Filter -->
+    <div id="catalogo" class="sticky top-0 bg-white shadow-md z-50 py-4">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-wrap gap-2 justify-center" id="category-filters">
+                <button class="category-btn active px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="all">
+                    Todos
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="engineering">
+                    💻 Engineering
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="design">
+                    🎨 Design
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="marketing">
+                    📢 Marketing
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="product">
+                    📋 Product
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="support">
+                    🛟 Support
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="testing">
+                    ✅ Testing
+                </button>
+                <button class="category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200" data-category="spatial">
+                    🥽 Spatial
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agents Grid -->
+    <main class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div id="agents-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards injected by JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">💰 Opciones de Licencia</h2>
+            <p class="text-xl opacity-75 mb-12">Elige cómo quieres usar The Agency</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <div class="text-4xl font-bold mb-4">$97</div>
+                    <p class="text-gray-400 mb-6">Pago único</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400">✓</span>
+                            <span>10 agentes esenciales</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400">✓</span>
+                            <span>Guía de uso PDF</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400">✓</span>
+                            <span>Actualizaciones 3 meses</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-lg font-semibold transition">
+                        Comprar Ahora
+                    </button>
+                </div>
+
+                <!-- Professional -->
+                <div class="bg-gradient-to-b from-purple-600 to-purple-800 rounded-2xl p-8 transform scale-105 shadow-2xl">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-gray-900 px-3 py-1 rounded-bl-lg rounded-tr-lg text-sm font-bold">
+                        POPULAR
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Professional</h3>
+                    <div class="text-4xl font-bold mb-4">$197</div>
+                    <p class="text-purple-200 mb-6">Pago único</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-300">✓</span>
+                            <span>Los 99 agentes completos</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-300">✓</span>
+                            <span>Guía + videos tutoriales</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-300">✓</span>
+                            <span>Actualizaciones de por vida</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-300">✓</span>
+                            <span>Comunidad Discord</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-purple-700 hover:bg-gray-100 py-3 rounded-lg font-semibold transition">
+                        Comprar Ahora
+                    </button>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+                    <div class="text-4xl font-bold mb-4">$997</div>
+                    <p class="text-gray-400 mb-6">Pago único</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400">✓</span>
+                            <span>Todo lo de Professional</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400">✓</span>
+                            <span>Licencia comercial</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400">✓</span>
+                            <span>Soporte prioritario</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400">✓</span>
+                            <span>1h consultoría 1-a-1</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-lg font-semibold transition">
+                        Contactar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">🚀 ¿Listo para Empezar?</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Obtén acceso inmediato a los 99 agentes y transforma tu negocio con IA.
+            </p>
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <p class="text-gray-700 mb-4">
+                    ¿Tienes preguntas? ¿Necesitas una demo?
+                </p>
+                <a href="mailto:ventas@theagency.ai" class="text-purple-600 font-semibold hover:text-purple-700 text-lg">
+                    ventas@theagency.ai
+                </a>
+                <div class="mt-6 flex justify-center gap-4">
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.31 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p>&copy; 2026 The Agency. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 modal-overlay bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto animate-fade-in">
+            <div id="modal-content" class="p-8">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const agents = [
+            // ENGINEERING
+            {
+                category: "engineering",
+                name: "Frontend Developer",
+                emoji: "🎨",
+                color: "cyan",
+                description: "Experto en React, Vue, Angular. Crea interfaces modernas, rápidas y accesibles.",
+                whenToUse: "Apps web modernas, componentes UI, optimización de rendimiento",
+                deliverables: "Componentes React/Vue, diseño responsive, optimización Core Web Vitals"
+            },
+            {
+                category: "engineering",
+                name: "Backend Architect",
+                emoji: "🏗️",
+                color: "blue",
+                description: "Arquitectura de sistemas escalables, APIs, bases de datos y microservicios.",
+                whenToUse: "Sistemas backend, diseño de APIs, arquitectura de bases de datos",
+                deliverables: "APIs REST/GraphQL, esquemas de BD, arquitectura microservicios"
+            },
+            {
+                category: "engineering",
+                name: "DevOps Automator",
+                emoji: "🚀",
+                color: "orange",
+                description: "Automatización de infraestructura, CI/CD, despliegues y monitoreo.",
+                whenToUse: "Pipelines de deploy, infraestructura cloud, automatización",
+                deliverables: "CI/CD pipelines, infraestructura como código, monitoreo"
+            },
+            {
+                category: "engineering",
+                name: "AI Engineer",
+                emoji: "🤖",
+                color: "indigo",
+                description: "Machine learning, modelos de IA, integración de features inteligentes.",
+                whenToUse: "Features con IA, modelos ML, procesamiento de datos",
+                deliverables: "Modelos ML, APIs de inferencia, pipelines de datos"
+            },
+            {
+                category: "engineering",
+                name: "Mobile App Builder",
+                emoji: "📱",
+                color: "purple",
+                description: "Apps iOS/Android con React Native y Flutter.",
+                whenToUse: "Apps móviles nativas o cross-platform",
+                deliverables: "Apps iOS/Android, componentes móviles, publicación en stores"
+            },
+            {
+                category: "engineering",
+                name: "Security Engineer",
+                emoji: "🔒",
+                color: "red",
+                description: "Seguridad de aplicaciones, auditorías, threat modeling.",
+                whenToUse: "Auditorías de seguridad, compliance, protección de datos",
+                deliverables: "Security audits, threat models, implementación de seguridad"
+            },
+            {
+                category: "engineering",
+                name: "Rapid Prototyper",
+                emoji: "⚡",
+                color: "yellow",
+                description: "POCs rápidos, MVPs, iteración veloz.",
+                whenToUse: "Validar ideas rápido, hackathons, primeros prototipos",
+                deliverables: "POCs funcionales, MVPs, demos en días"
+            },
+
+            // DESIGN
+            {
+                category: "design",
+                name: "UI Designer",
+                emoji: "🎯",
+                color: "purple",
+                description: "Diseño visual, sistemas de diseño, componentes pixel-perfect.",
+                whenToUse: "Interfaces bonitas, design systems, component libraries",
+                deliverables: "Diseños Figma, design tokens, component libraries"
+            },
+            {
+                category: "design",
+                name: "UX Researcher",
+                emoji: "🔍",
+                color: "green",
+                description: "Investigación de usuarios, testing, insights accionables.",
+                whenToUse: "Entender usuarios, validar diseños, research",
+                deliverables: "User personas, journey maps, reportes de research"
+            },
+            {
+                category: "design",
+                name: "Brand Guardian",
+                emoji: "🎭",
+                color: "pink",
+                description: "Identidad de marca, consistencia, posicionamiento.",
+                whenToUse: "Desarrollo de marca, brand guidelines, consistencia",
+                deliverables: "Brand guidelines, identidad visual, voice & tone"
+            },
+            {
+                category: "design",
+                name: "Whimsy Injector",
+                emoji: "✨",
+                color: "fuchsia",
+                description: "Añade personalidad, delight y elementos juguetones a la marca.",
+                whenToUse: "Micro-interacciones, Easter eggs, hacer la marca memorable",
+                deliverables: "Elementos de delight, Easter eggs, gamificación"
+            },
+            {
+                category: "design",
+                name: "UX Architect",
+                emoji: "🏛️",
+                color: "slate",
+                description: "Arquitectura técnica, CSS systems, foundations para devs.",
+                whenToUse: "Fundamentos técnicos de diseño, CSS architecture",
+                deliverables: "Sistemas CSS, patrones de implementación, guías para devs"
+            },
+
+            // MARKETING
+            {
+                category: "marketing",
+                name: "Growth Hacker",
+                emoji: "📈",
+                color: "green",
+                description: "Crecimiento viral, adquisición de usuarios, funnels de conversión.",
+                whenToUse: "Crecer rápido, viral loops, optimizar conversión",
+                deliverables: "Estrategias de growth, experimentos A/B, funnels optimizados"
+            },
+            {
+                category: "marketing",
+                name: "Content Creator",
+                emoji: "📝",
+                color: "teal",
+                description: "Estrategia de contenidos, copy, storytelling multi-plataforma.",
+                whenToUse: "Contenido para redes, blogs, videos, podcasts",
+                deliverables: "Calendarios editoriales, copy, guiones de video"
+            },
+            {
+                category: "marketing",
+                name: "Instagram Curator",
+                emoji: "📸",
+                color: "rose",
+                description: "Especialista en Instagram: estética, Reels, Stories, Shopping.",
+                whenToUse: "Estrategia Instagram, crecimiento orgánico, ventas",
+                deliverables: "Feed aesthetic, Reels strategy, Instagram Shopping"
+            },
+            {
+                category: "marketing",
+                name: "TikTok Strategist",
+                emoji: "🎵",
+                color: "cyan",
+                description: "Viralidad en TikTok, trends, contenido short-form.",
+                whenToUse: "Crecer en TikTok, contenido viral, trends",
+                deliverables: "TikTok strategy, guiones virales, trend analysis"
+            },
+            {
+                category: "marketing",
+                name: "Reddit Community Builder",
+                emoji: "👽",
+                color: "orange",
+                description: "Construir comunidad en Reddit, AMAs, engagement auténtico.",
+                whenToUse: "Community building, AMAs, marketing en Reddit",
+                deliverables: "Reddit strategy, community guidelines, engagement plan"
+            },
+            {
+                category: "marketing",
+                name: "Twitter Engager",
+                emoji: "🐦",
+                color: "sky",
+                description: "Crecimiento en Twitter/X, hilos virales, engagement.",
+                whenToUse: "Personal branding, hilos virales, Twitter growth",
+                deliverables: "Twitter strategy, thread templates, engagement tactics"
+            },
+
+            // PRODUCT
+            {
+                category: "product",
+                name: "Sprint Prioritizer",
+                emoji: "🎯",
+                color: "green",
+                description: "Priorización de features, sprint planning, roadmaps.",
+                whenToUse: "Planificar sprints, priorizar backlog, roadmaps",
+                deliverables: "Sprint plans, roadmaps, priorización RICE/MoSCoW"
+            },
+            {
+                category: "product",
+                name: "Trend Researcher",
+                emoji: "📊",
+                color: "blue",
+                description: "Investigación de tendencias, market analysis, competencia.",
+                whenToUse: "Entender el mercado, tendencias, opportunity spotting",
+                deliverables: "Market research, trend reports, competitive analysis"
+            },
+            {
+                category: "product",
+                name: "Feedback Synthesizer",
+                emoji: "💬",
+                color: "purple",
+                description: "Analiza feedback de usuarios, identifica patrones, prioriza.",
+                whenToUse: "Analizar feedback, user interviews, soporte",
+                deliverables: "Feedback reports, pattern analysis, action items"
+            },
+
+            // SUPPORT
+            {
+                category: "support",
+                name: "Support Responder",
+                emoji: "🛟",
+                color: "blue",
+                description: "Respuestas a clientes, soporte, documentación.",
+                whenToUse: "Soporte al cliente, FAQs, help docs",
+                deliverables: "Respuestas de soporte, knowledge base, FAQs"
+            },
+            {
+                category: "support",
+                name: "Infrastructure Maintainer",
+                emoji: "⚙️",
+                color: "gray",
+                description: "Mantenimiento de infraestructura, monitoring, incidentes.",
+                whenToUse: "Mantenimiento systems, incident response, uptime",
+                deliverables: "Runbooks, incident reports, monitoring setup"
+            },
+            {
+                category: "support",
+                name: "Legal Compliance Checker",
+                emoji: "⚖️",
+                color: "slate",
+                description: "Compliance legal: GDPR, CCPA, términos, privacidad.",
+                whenToUse: "Compliance, términos de servicio, privacy policies",
+                deliverables: "Compliance audits, legal docs, policy templates"
+            },
+
+            // TESTING
+            {
+                category: "testing",
+                name: "API Tester",
+                emoji: "🧪",
+                color: "orange",
+                description: "Testing de APIs, automatización de tests, calidad.",
+                whenToUse: "Testear APIs, QA automation, integration tests",
+                deliverables: "Test suites, API tests, coverage reports"
+            },
+            {
+                category: "testing",
+                name: "Reality Checker",
+                emoji: "🚨",
+                color: "red",
+                description: "Control de calidad final, dice la verdad sobre el estado real.",
+                whenToUse: "Pre-launch check, reality check, quality gate",
+                deliverables: "Quality reports, go/no-go recommendations"
+            },
+
+            // SPATIAL
+            {
+                category: "spatial",
+                name: "VisionOS Engineer",
+                emoji: "🥽",
+                color: "purple",
+                description: "Apps para Apple Vision Pro, spatial computing.",
+                whenToUse: "Apps visionOS, realidad mixta, spatial interfaces",
+                deliverables: "VisionOS apps, spatial UI, hand tracking"
+            },
+            {
+                category: "spatial",
+                name: "XR Developer",
+                emoji: "🕶️",
+                color: "cyan",
+                description: "Realidad virtual y aumentada, experiencias inmersivas.",
+                whenToUse: "VR/AR experiences, training inmersivo, 3D interfaces",
+                deliverables: "VR/AR apps, 3D experiences, Unity/Unreal projects"
+            }
+        ];
+
+        const categoryNames = {
+            engineering: "💻 Engineering",
+            design: "🎨 Design",
+            marketing: "📢 Marketing",
+            product: "📋 Product",
+            support: "🛟 Support",
+            testing: "✅ Testing",
+            spatial: "🥽 Spatial Computing"
+        };
+
+        function renderAgents(filter = "all") {
+            const grid = document.getElementById("agents-grid");
+            grid.innerHTML = "";
+
+            const filtered = filter === "all" 
+                ? agents 
+                : agents.filter(a => a.category === filter);
+
+            filtered.forEach(agent => {
+                const card = document.createElement("div");
+                card.className = "agent-card bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer hover:shadow-xl";
+                card.innerHTML = `
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">${agent.emoji}</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-lg text-gray-900">${agent.name}</h3>
+                            <p class="text-sm text-gray-600 mt-1">${agent.description}</p>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
+                                    ${categoryNames[agent.category]}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mt-4 text-purple-600 text-sm font-medium hover:text-purple-700 flex items-center gap-1">
+                        Ver detalles <span>→</span>
+                    </button>
+                `;
+                card.addEventListener("click", () => openModal(agent));
+                grid.appendChild(card);
+            });
+        }
+
+        function openModal(agent) {
+            const modal = document.getElementById("modal");
+            const content = document.getElementById("modal-content");
+            
+            content.innerHTML = `
+                <div class="flex justify-between items-start mb-6">
+                    <div class="flex items-center gap-4">
+                        <div class="text-5xl">${agent.emoji}</div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">${agent.name}</h2>
+                            <span class="text-sm text-gray-500">${categoryNames[agent.category]}</span>
+                        </div>
+                    </div>
+                    <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+                </div>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">📋 Qué hace</h3>
+                        <p class="text-gray-700">${agent.description}</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">🎯 Cuándo usarlo</h3>
+                        <p class="text-gray-700">${agent.whenToUse}</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">📦 Deliverables</h3>
+                        <p class="text-gray-700">${agent.deliverables}</p>
+                    </div>
+                    
+                    <div class="pt-6 border-t">
+                        <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                            Obtener este agente
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").classList.add("hidden");
+            document.body.style.overflow = "";
+        }
+
+        // Category filter
+        document.querySelectorAll(".category-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                renderAgents(btn.dataset.category);
+            });
+        });
+
+        // Close modal on overlay click
+        document.getElementById("modal").addEventListener("click", (e) => {
+            if (e.target.id === "modal") closeModal();
+        });
+
+        // Initial render
+        renderAgents();
+    </script>
+</body>
+</html>
