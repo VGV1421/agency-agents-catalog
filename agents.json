@@ -1,36 +1,3 @@
-Error parsing: /root/.openclaw/workspace/agency-agents/.github/PULL_REQUEST_TEMPLATE.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/design/design-image-prompt-engineer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/design/design-inclusive-visuals-specialist.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/design/design-visual-storyteller.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-ai-engineer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-autonomous-optimization-architect.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-frontend-developer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-senior-developer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/examples/workflow-landing-page.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/examples/workflow-startup-mvp.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/marketing/marketing-content-creator.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/marketing/marketing-growth-hacker.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/marketing/marketing-social-media-strategist.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/product/product-behavioral-nudge-engine.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/product/product-feedback-synthesizer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/product/product-sprint-prioritizer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/product/product-trend-researcher.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/project-management/project-manager-senior.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/terminal-integration-specialist.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/visionos-spatial-engineer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/xr-cockpit-interaction-specialist.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/xr-immersive-developer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/xr-interface-architect.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/specialized/agents-orchestrator.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/specialized/data-analytics-reporter.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/specialized/specialized-cultural-intelligence-strategist.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-api-tester.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-evidence-collector.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-performance-benchmarker.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-reality-checker.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-test-results-analyzer.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-tool-evaluator.md Cannot access 'category' before initialization
-Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-optimizer.md Cannot access 'category' before initialization
 [
   {
     "category": "design",
@@ -40,6 +7,24 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
     "description": "Expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning",
     "whenToUse": "Develop brand strategy including purpose, vision, mission, values, and personality | Design complete visual identity systems with logos, colors, typography, and guidelines",
     "deliverables": "Brand Foundation Framework"
+  },
+  {
+    "category": "design",
+    "name": "Image Prompt Engineer",
+    "emoji": "🖼️",
+    "color": "amber",
+    "description": "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography through generative AI tools.",
+    "whenToUse": "Craft detailed, structured prompts that produce professional-quality AI-generated photography | Translate abstract visual concepts into precise, actionable prompt language",
+    "deliverables": "Diseños + componentes + guías de estilo"
+  },
+  {
+    "category": "design",
+    "name": "Inclusive Visuals Specialist",
+    "emoji": "👁️",
+    "color": "#4DB6AC",
+    "description": "Representation expert who defeats systemic AI biases to generate culturally accurate, affirming, and non-stereotypical images and video.",
+    "whenToUse": "Prevent AI Hallucinations: Write explicit negative constraints to block \"AI weirdness\" that degrades human representation (e.g., extra fingers, clone faces in diverse crowds, fake cultural symbols). | Ensure Cultural Specificity: Craft prompts that correctly anchor subjects in their actual environments (accurate architecture, correct clothing types, appropriate lighting for melanin).",
+    "deliverables": "Diseños + componentes + guías de estilo"
   },
   {
     "category": "design",
@@ -70,12 +55,39 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
   },
   {
     "category": "design",
+    "name": "Visual Storyteller",
+    "emoji": "👁️",
+    "color": "purple",
+    "description": "Expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design. Specializes in transforming complex information into engaging visual stories that connect with audiences and drive emotional engagement.",
+    "whenToUse": "Develop compelling visual storytelling campaigns and brand narratives | Create storyboards, visual storytelling frameworks, and narrative arc development",
+    "deliverables": "Diseños + componentes + guías de estilo"
+  },
+  {
+    "category": "design",
     "name": "Whimsy Injector",
     "emoji": "✨",
     "color": "pink",
     "description": "Expert creative specialist focused on adding personality, delight, and playful elements to brand experiences. Creates memorable, joyful interactions that differentiate brands through unexpected moments of whimsy",
     "whenToUse": "Add playful elements that enhance rather than distract from core functionality | Create brand character through micro-interactions, copy, and visual elements",
     "deliverables": "Brand Personality Framework"
+  },
+  {
+    "category": "engineering",
+    "name": "AI Engineer",
+    "emoji": "🤖",
+    "color": "blue",
+    "description": "Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions.",
+    "whenToUse": "Build machine learning models for practical business applications | Implement AI-powered features and intelligent automation systems",
+    "deliverables": "Código + tests + documentación técnica"
+  },
+  {
+    "category": "engineering",
+    "name": "Autonomous Optimization Architect",
+    "emoji": "🏛️",
+    "color": "#673AB7",
+    "description": "Intelligent system governor that continuously shadow-tests APIs for performance while enforcing strict financial and security guardrails against runaway costs.",
+    "whenToUse": "Continuous A/B Optimization: Run experimental AI models on real user data in the background. Grade them automatically against the current production model. | Default requirement: Never implement an open-ended retry loop or an unbounded API call. Every external request must have a strict timeout, a retry cap, and a designated, cheaper fallback.",
+    "deliverables": "Código + tests + documentación técnica"
   },
   {
     "category": "engineering",
@@ -106,6 +118,15 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
   },
   {
     "category": "engineering",
+    "name": "Frontend Developer",
+    "emoji": "🎨",
+    "color": "cyan",
+    "description": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization",
+    "whenToUse": "Build editor extensions with navigation commands (openAt, reveal, peek) | Implement WebSocket/RPC bridges for cross-application communication",
+    "deliverables": "Código + tests + documentación técnica"
+  },
+  {
+    "category": "engineering",
     "name": "Mobile App Builder",
     "emoji": "📱",
     "color": "purple",
@@ -133,6 +154,15 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
   },
   {
     "category": "engineering",
+    "name": "Senior Developer",
+    "emoji": "👨‍💻",
+    "color": "green",
+    "description": "Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integration",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Código + tests + documentación técnica"
+  },
+  {
+    "category": "engineering",
     "name": "Technical Writer",
     "emoji": "📝",
     "color": "teal",
@@ -151,6 +181,24 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
   },
   {
     "category": "marketing",
+    "name": "Content Creator",
+    "emoji": "📝",
+    "color": "teal",
+    "description": "Expert content strategist and creator for multi-platform campaigns. Develops editorial calendars, creates compelling copy, manages brand storytelling, and optimizes content for engagement across all digital channels.",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Estrategias + contenidos + campañas"
+  },
+  {
+    "category": "marketing",
+    "name": "Growth Hacker",
+    "emoji": "📈",
+    "color": "green",
+    "description": "Expert growth strategist specializing in rapid user acquisition through data-driven experimentation. Develops viral loops, optimizes conversion funnels, and finds scalable growth channels for exponential business growth.",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Estrategias + contenidos + campañas"
+  },
+  {
+    "category": "marketing",
     "name": "Instagram Curator",
     "emoji": "📸",
     "color": "#E4405F",
@@ -166,6 +214,15 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
     "description": "Expert Reddit marketing specialist focused on authentic community engagement, value-driven content creation, and long-term relationship building. Masters Reddit culture navigation.",
     "whenToUse": "Value-First Engagement: Contributing genuine insights, solutions, and resources without overt promotion | Community Integration: Becoming a trusted member of relevant subreddits through consistent helpful participation",
     "deliverables": "Community Strategy Documents | Performance Analytics"
+  },
+  {
+    "category": "marketing",
+    "name": "Social Media Strategist",
+    "emoji": "📢",
+    "color": "blue",
+    "description": "Expert social media strategist for LinkedIn, Twitter, and professional platforms. Creates cross-platform campaigns, builds communities, manages real-time engagement, and develops thought leadership strategies.",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Estrategias + contenidos + campañas"
   },
   {
     "category": "marketing",
@@ -213,6 +270,42 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
     "deliverables": "Strategic & Content Documents | Performance Analytics & KPIs"
   },
   {
+    "category": "product",
+    "name": "Behavioral Nudge Engine",
+    "emoji": "🧠",
+    "color": "#FF8A65",
+    "description": "Behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and success.",
+    "whenToUse": "Cadence Personalization: Ask users how they prefer to work and adapt the software's communication frequency accordingly. | Cognitive Load Reduction: Break down massive workflows into tiny, achievable micro-sprints to prevent user paralysis.",
+    "deliverables": "Roadmaps + specs + análisis de mercado"
+  },
+  {
+    "category": "product",
+    "name": "Feedback Synthesizer",
+    "emoji": "💬",
+    "color": "blue",
+    "description": "Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights. Transforms qualitative feedback into quantitative priorities and strategic recommendations.",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Roadmaps + specs + análisis de mercado"
+  },
+  {
+    "category": "product",
+    "name": "Sprint Prioritizer",
+    "emoji": "🎯",
+    "color": "green",
+    "description": "Expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation. Focused on maximizing team velocity and business value delivery through data-driven prioritization frameworks.",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Roadmaps + specs + análisis de mercado"
+  },
+  {
+    "category": "product",
+    "name": "Trend Researcher",
+    "emoji": "📊",
+    "color": "purple",
+    "description": "Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment. Focused on providing actionable insights that drive product strategy and innovation decisions.",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Roadmaps + specs + análisis de mercado"
+  },
+  {
     "category": "project-management",
     "name": "Experiment Tracker",
     "emoji": "🧪",
@@ -229,6 +322,15 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
     "description": "Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment. Focused on shepherding projects from conception to completion while managing resources, risks, and communications across multiple teams and departments.",
     "whenToUse": "Plan and execute large-scale projects involving multiple teams and departments | Develop comprehensive project timelines with dependency mapping and critical path analysis",
     "deliverables": "Project Charter Template"
+  },
+  {
+    "category": "project-management",
+    "name": "Senior Project Manager",
+    "emoji": "📊",
+    "color": "blue",
+    "description": "Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec requirements",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Planes + timelines + reports"
   },
   {
     "category": "project-management",
@@ -258,6 +360,51 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
     "deliverables": "Metal Rendering Pipeline | Vision Pro Compositor Integration"
   },
   {
+    "category": "spatial-computing",
+    "name": "Terminal Integration Specialist",
+    "emoji": "💻",
+    "color": "green",
+    "description": "Terminal emulation, text rendering optimization, and SwiftTerm integration for modern Swift applications",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Apps XR + interfaces espaciales"
+  },
+  {
+    "category": "spatial-computing",
+    "name": "visionOS Spatial Engineer",
+    "emoji": "🥽",
+    "color": "indigo",
+    "description": "Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Apps XR + interfaces espaciales"
+  },
+  {
+    "category": "spatial-computing",
+    "name": "XR Cockpit Interaction Specialist",
+    "emoji": "🕶️",
+    "color": "orange",
+    "description": "Specialist in designing and developing immersive cockpit-based control systems for XR environments",
+    "whenToUse": "Design hand-interactive yokes, levers, and throttles using 3D meshes and input constraints | Build dashboard UIs with toggles, switches, gauges, and animated feedback",
+    "deliverables": "Apps XR + interfaces espaciales"
+  },
+  {
+    "category": "spatial-computing",
+    "name": "XR Immersive Developer",
+    "emoji": "🕶️",
+    "color": "neon-cyan",
+    "description": "Expert WebXR and immersive technology developer with specialization in browser-based AR/VR/XR applications",
+    "whenToUse": "Integrate full WebXR support with hand tracking, pinch, gaze, and controller input | Implement immersive interactions using raycasting, hit testing, and real-time physics",
+    "deliverables": "Apps XR + interfaces espaciales"
+  },
+  {
+    "category": "spatial-computing",
+    "name": "XR Interface Architect",
+    "emoji": "🏛️",
+    "color": "neon-green",
+    "description": "Spatial interaction designer and interface strategist for immersive AR/VR/XR environments",
+    "whenToUse": "Create HUDs, floating menus, panels, and interaction zones | Support direct touch, gaze+pinch, controller, and hand gesture input models",
+    "deliverables": "Apps XR + interfaces espaciales"
+  },
+  {
     "category": "specialized",
     "name": "Agentic Identity & Trust Architect",
     "emoji": "🏛️",
@@ -265,6 +412,33 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
     "description": "Designs identity, authentication, and trust verification systems for autonomous AI agents operating in multi-agent environments. Ensures agents can prove who they are, what they're authorized to do, and what they actually did.",
     "whenToUse": "Design cryptographic identity systems for autonomous agents — keypair generation, credential issuance, identity attestation | Build agent authentication that works without human-in-the-loop for every call — agents must authenticate to each other programmatically",
     "deliverables": "Agent Identity Schema | Trust Score Model | Delegation Chain Verification"
+  },
+  {
+    "category": "specialized",
+    "name": "Agents Orchestrator",
+    "emoji": "🎼",
+    "color": "cyan",
+    "description": "Autonomous pipeline manager that orchestrates the entire development workflow. You are the leader of this process.",
+    "whenToUse": "Manage full workflow: PM → ArchitectUX → [Dev ↔ QA Loop] → Integration | Ensure each phase completes successfully before advancing",
+    "deliverables": "Entregables específicos del agente"
+  },
+  {
+    "category": "specialized",
+    "name": "Cultural Intelligence Strategist",
+    "emoji": "🌍",
+    "color": "#FFA000",
+    "description": "CQ specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically across intersectional identities.",
+    "whenToUse": "Invisible Exclusion Audits: Review product requirements, workflows, and prompts to identify where a user outside the standard developer demographic might feel alienated, ignored, or stereotyped.",
+    "deliverables": "Entregables específicos del agente"
+  },
+  {
+    "category": "specialized",
+    "name": "Data Analytics Reporter",
+    "emoji": "📊",
+    "color": "indigo",
+    "description": "Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical analysis, tracks KPIs, and provides strategic decision support through data visualization and reporting.",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Entregables específicos del agente"
   },
   {
     "category": "specialized",
@@ -364,7 +538,70 @@ Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-
     "description": "Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers — if it's not tested with a screen reader, it's not accessible.",
     "whenToUse": "Evaluate interfaces against WCAG 2.2 AA criteria (and AAA where specified) | Test all four POUR principles: Perceivable, Operable, Understandable, Robust",
     "deliverables": "Accessibility Audit Report Template"
+  },
+  {
+    "category": "testing",
+    "name": "API Tester",
+    "emoji": "🧪",
+    "color": "purple",
+    "description": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations",
+    "whenToUse": "Develop and implement complete API testing frameworks covering functional, performance, and security aspects | Create automated test suites with 95%+ coverage of all API endpoints and functionality",
+    "deliverables": "Tests + reports + auditorías"
+  },
+  {
+    "category": "testing",
+    "name": "Evidence Collector",
+    "emoji": "🤖",
+    "color": "orange",
+    "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everything",
+    "whenToUse": "Ver detalles completos en el modal",
+    "deliverables": "Tests + reports + auditorías"
+  },
+  {
+    "category": "testing",
+    "name": "Performance Benchmarker",
+    "emoji": "⚡",
+    "color": "orange",
+    "description": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure",
+    "whenToUse": "Execute load testing, stress testing, endurance testing, and scalability assessment across all systems | Establish performance baselines and conduct competitive benchmarking analysis",
+    "deliverables": "Tests + reports + auditorías"
+  },
+  {
+    "category": "testing",
+    "name": "Reality Checker",
+    "emoji": "🚨",
+    "color": "red",
+    "description": "Stops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelming proof for production readiness",
+    "whenToUse": "You're the last line of defense against unrealistic assessments | No more \"98/100 ratings\" for basic dark themes",
+    "deliverables": "Tests + reports + auditorías"
+  },
+  {
+    "category": "testing",
+    "name": "Test Results Analyzer",
+    "emoji": "✅",
+    "color": "indigo",
+    "description": "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities",
+    "whenToUse": "Analyze test execution results across functional, performance, security, and integration testing | Identify failure patterns, trends, and systemic quality issues through statistical analysis",
+    "deliverables": "Tests + reports + auditorías"
+  },
+  {
+    "category": "testing",
+    "name": "Tool Evaluator",
+    "emoji": "🔧",
+    "color": "teal",
+    "description": "Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms for business use and productivity optimization",
+    "whenToUse": "Evaluate tools across functional, technical, and business requirements with weighted scoring | Conduct competitive analysis with detailed feature comparison and market positioning",
+    "deliverables": "Tests + reports + auditorías"
+  },
+  {
+    "category": "testing",
+    "name": "Workflow Optimizer",
+    "emoji": "🔄",
+    "color": "green",
+    "description": "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency",
+    "whenToUse": "Map current state processes with detailed bottleneck identification and pain point analysis | Design optimized future state workflows using Lean, Six Sigma, and automation principles",
+    "deliverables": "Tests + reports + auditorías"
   }
 ]
 
-// Total: 37 agentes
+// Total: 67 agentes
