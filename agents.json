@@ -1,3 +1,36 @@
+Error parsing: /root/.openclaw/workspace/agency-agents/.github/PULL_REQUEST_TEMPLATE.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/design/design-image-prompt-engineer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/design/design-inclusive-visuals-specialist.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/design/design-visual-storyteller.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-ai-engineer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-autonomous-optimization-architect.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-frontend-developer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/engineering/engineering-senior-developer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/examples/workflow-landing-page.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/examples/workflow-startup-mvp.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/marketing/marketing-content-creator.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/marketing/marketing-growth-hacker.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/marketing/marketing-social-media-strategist.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/product/product-behavioral-nudge-engine.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/product/product-feedback-synthesizer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/product/product-sprint-prioritizer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/product/product-trend-researcher.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/project-management/project-manager-senior.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/terminal-integration-specialist.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/visionos-spatial-engineer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/xr-cockpit-interaction-specialist.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/xr-immersive-developer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/spatial-computing/xr-interface-architect.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/specialized/agents-orchestrator.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/specialized/data-analytics-reporter.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/specialized/specialized-cultural-intelligence-strategist.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-api-tester.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-evidence-collector.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-performance-benchmarker.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-reality-checker.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-test-results-analyzer.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-tool-evaluator.md Cannot access 'category' before initialization
+Error parsing: /root/.openclaw/workspace/agency-agents/testing/testing-workflow-optimizer.md Cannot access 'category' before initialization
 [
   {
     "category": "design",
@@ -5,26 +38,8 @@
     "emoji": "🎭",
     "color": "blue",
     "description": "Expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "design",
-    "name": "Image Prompt Engineer",
-    "emoji": "🖼️",
-    "color": "amber",
-    "description": "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography through generative AI tools.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "design",
-    "name": "Inclusive Visuals Specialist",
-    "emoji": "👁️",
-    "color": "#4DB6AC",
-    "description": "Representation expert who defeats systemic AI biases to generate culturally accurate, affirming, and non-stereotypical images and video.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Develop brand strategy including purpose, vision, mission, values, and personality | Design complete visual identity systems with logos, colors, typography, and guidelines",
+    "deliverables": "Brand Foundation Framework"
   },
   {
     "category": "design",
@@ -32,8 +47,8 @@
     "emoji": "🎯",
     "color": "purple",
     "description": "Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation. Creates beautiful, consistent, accessible user interfaces that enhance UX and reflect brand identity",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Develop component libraries with consistent visual language and interaction patterns | Design scalable design token systems for cross-platform consistency",
+    "deliverables": "Component Library Architecture"
   },
   {
     "category": "design",
@@ -41,8 +56,8 @@
     "emoji": "🔍",
     "color": "purple",
     "description": "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Provide CSS design systems with variables, spacing scales, typography hierarchies | Design layout frameworks using modern Grid/Flexbox patterns",
+    "deliverables": "CSS Design System Foundation"
   },
   {
     "category": "design",
@@ -50,17 +65,8 @@
     "emoji": "🔍",
     "color": "green",
     "description": "Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights. Provides actionable research findings that improve product usability and user satisfaction",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "design",
-    "name": "Visual Storyteller",
-    "emoji": "👁️",
-    "color": "purple",
-    "description": "Expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design. Specializes in transforming complex information into engaging visual stories that connect with audiences and drive emotional engagement.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Conduct comprehensive user research using qualitative and quantitative methods | Create detailed user personas based on empirical data and behavioral patterns",
+    "deliverables": "User Research Study Framework"
   },
   {
     "category": "design",
@@ -68,26 +74,8 @@
     "emoji": "✨",
     "color": "pink",
     "description": "Expert creative specialist focused on adding personality, delight, and playful elements to brand experiences. Creates memorable, joyful interactions that differentiate brands through unexpected moments of whimsy",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "engineering",
-    "name": "AI Engineer",
-    "emoji": "🤖",
-    "color": "blue",
-    "description": "Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "engineering",
-    "name": "Autonomous Optimization Architect",
-    "emoji": "🏛️",
-    "color": "#673AB7",
-    "description": "Intelligent system governor that continuously shadow-tests APIs for performance while enforcing strict financial and security guardrails against runaway costs.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Add playful elements that enhance rather than distract from core functionality | Create brand character through micro-interactions, copy, and visual elements",
+    "deliverables": "Brand Personality Framework"
   },
   {
     "category": "engineering",
@@ -95,8 +83,8 @@
     "emoji": "🏗️",
     "color": "blue",
     "description": "Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure. Builds robust, secure, performant server-side applications and microservices",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Define and maintain data schemas and index specifications | Design efficient data structures for large-scale datasets (100k+ entities)",
+    "deliverables": "System Architecture Design"
   },
   {
     "category": "engineering",
@@ -104,8 +92,8 @@
     "emoji": "📊",
     "color": "orange",
     "description": "Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache Spark, dbt, streaming systems, and cloud data platforms to turn raw data into trusted, analytics-ready assets.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Design and build ETL/ELT pipelines that are idempotent, observable, and self-healing | Implement Medallion Architecture (Bronze → Silver → Gold) with clear data contracts per layer",
+    "deliverables": "Spark Pipeline (PySpark + Delta Lake) | dbt Data Quality Contract"
   },
   {
     "category": "engineering",
@@ -113,17 +101,8 @@
     "emoji": "🚀",
     "color": "orange",
     "description": "Expert DevOps engineer specializing in infrastructure automation, CI/CD pipeline development, and cloud operations",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "engineering",
-    "name": "Frontend Developer",
-    "emoji": "🎨",
-    "color": "cyan",
-    "description": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Design and implement Infrastructure as Code using Terraform, CloudFormation, or CDK | Build comprehensive CI/CD pipelines with GitHub Actions, GitLab CI, or Jenkins",
+    "deliverables": "CI/CD Pipeline Architecture | Infrastructure as Code Template"
   },
   {
     "category": "engineering",
@@ -131,8 +110,8 @@
     "emoji": "📱",
     "color": "purple",
     "description": "Specialized mobile application developer with expertise in native iOS/Android development and cross-platform frameworks",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Build native iOS apps using Swift, SwiftUI, and iOS-specific frameworks | Develop native Android apps using Kotlin, Jetpack Compose, and Android APIs",
+    "deliverables": "Android Jetpack Compose Component"
   },
   {
     "category": "engineering",
@@ -140,8 +119,8 @@
     "emoji": "⚡",
     "color": "green",
     "description": "Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and frameworks",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Create working prototypes in under 3 days using rapid development tools | Build MVPs that validate core hypotheses with minimal viable features",
+    "deliverables": "Rapid UI Development with shadcn/ui"
   },
   {
     "category": "engineering",
@@ -149,17 +128,8 @@
     "emoji": "🔒",
     "color": "red",
     "description": "Expert application security engineer specializing in threat modeling, vulnerability assessment, secure code review, and security architecture design for modern web and cloud-native applications.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "engineering",
-    "name": "Senior Developer",
-    "emoji": "👨‍💻",
-    "color": "green",
-    "description": "Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integration",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Integrate security into every phase of the SDLC — from design to deployment | Conduct threat modeling sessions to identify risks before code is written",
+    "deliverables": "Threat Model Document"
   },
   {
     "category": "engineering",
@@ -167,8 +137,8 @@
     "emoji": "📝",
     "color": "teal",
     "description": "Expert technical writer specializing in developer documentation, API references, README files, and tutorials. Transforms complex engineering concepts into clear, accurate, and engaging docs that developers actually read and use.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Write README files that make developers want to use a project within the first 30 seconds | Create API reference docs that are complete, accurate, and include working code examples",
+    "deliverables": "High-Quality README Template"
   },
   {
     "category": "marketing",
@@ -176,26 +146,8 @@
     "emoji": "📱",
     "color": "blue",
     "description": "Expert app store marketing specialist focused on App Store Optimization (ASO), conversion rate optimization, and app discoverability",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "marketing",
-    "name": "Content Creator",
-    "emoji": "📝",
-    "color": "teal",
-    "description": "Expert content strategist and creator for multi-platform campaigns. Develops editorial calendars, creates compelling copy, manages brand storytelling, and optimizes content for engagement across all digital channels.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "marketing",
-    "name": "Growth Hacker",
-    "emoji": "📈",
-    "color": "green",
-    "description": "Expert growth strategist specializing in rapid user acquisition through data-driven experimentation. Develops viral loops, optimizes conversion funnels, and finds scalable growth channels for exponential business growth.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Conduct comprehensive keyword research and optimization for app titles and descriptions | Develop metadata optimization strategies that improve search rankings",
+    "deliverables": "ASO Strategy Framework"
   },
   {
     "category": "marketing",
@@ -203,8 +155,8 @@
     "emoji": "📸",
     "color": "#E4405F",
     "description": "Expert Instagram marketing specialist focused on visual storytelling, community building, and multi-format content optimization. Masters aesthetic development and drives meaningful engagement.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Visual Brand Development: Creating cohesive, scroll-stopping aesthetics that build instant recognition | Multi-Format Mastery: Optimizing content across Posts, Stories, Reels, IGTV, and Shopping features",
+    "deliverables": "Visual Strategy Documents | Performance Analytics"
   },
   {
     "category": "marketing",
@@ -212,17 +164,8 @@
     "emoji": "🎯",
     "color": "#FF4500",
     "description": "Expert Reddit marketing specialist focused on authentic community engagement, value-driven content creation, and long-term relationship building. Masters Reddit culture navigation.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "marketing",
-    "name": "Social Media Strategist",
-    "emoji": "📢",
-    "color": "blue",
-    "description": "Expert social media strategist for LinkedIn, Twitter, and professional platforms. Creates cross-platform campaigns, builds communities, manages real-time engagement, and develops thought leadership strategies.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Value-First Engagement: Contributing genuine insights, solutions, and resources without overt promotion | Community Integration: Becoming a trusted member of relevant subreddits through consistent helpful participation",
+    "deliverables": "Community Strategy Documents | Performance Analytics"
   },
   {
     "category": "marketing",
@@ -230,8 +173,8 @@
     "emoji": "🎵",
     "color": "#000000",
     "description": "Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and community building. Masters TikTok's unique culture and features for brand growth.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Viral Content Creation: Developing content with viral potential using proven formulas and trend analysis | Algorithm Mastery: Optimizing for TikTok's For You Page through strategic content and engagement tactics",
+    "deliverables": "Content Strategy Framework | Performance Analytics"
   },
   {
     "category": "marketing",
@@ -239,8 +182,8 @@
     "emoji": "🐦",
     "color": "#1DA1F2",
     "description": "Expert Twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven growth. Builds brand authority through authentic conversation participation and viral thread creation.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Real-Time Engagement: Active participation in trending conversations and industry discussions | Thought Leadership: Establishing expertise through valuable insights and educational thread creation",
+    "deliverables": "Content Strategy Framework | Performance Analytics"
   },
   {
     "category": "marketing",
@@ -248,8 +191,8 @@
     "emoji": "💬",
     "color": "#09B83E",
     "description": "Expert WeChat Official Account (OA) strategist specializing in content marketing, subscriber engagement, and conversion optimization. Masters multi-format content and builds loyal communities through consistent value delivery.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Content Value Strategy: Delivering consistent, relevant value to subscribers through diverse content formats | Subscriber Relationship Building: Creating genuine connections that foster trust, loyalty, and advocacy",
+    "deliverables": "Content Strategy Documents | Performance Analytics & KPIs"
   },
   {
     "category": "marketing",
@@ -257,8 +200,8 @@
     "emoji": "📕",
     "color": "#FF1B6D",
     "description": "Expert Xiaohongshu marketing specialist focused on lifestyle content, trend-driven strategies, and authentic community engagement. Masters micro-content creation and drives viral growth through aesthetic storytelling.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Lifestyle Brand Development: Creating compelling lifestyle narratives that resonate with trend-conscious audiences | Trend-Driven Content Strategy: Identifying emerging trends and positioning brands ahead of the curve",
+    "deliverables": "Content Strategy Documents | Performance Analytics & KPIs"
   },
   {
     "category": "marketing",
@@ -266,44 +209,8 @@
     "emoji": "📱",
     "color": "#0084FF",
     "description": "Expert Zhihu marketing specialist focused on thought leadership, community credibility, and knowledge-driven engagement. Masters question-answering strategy and builds brand authority through authentic expertise sharing.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "product",
-    "name": "Behavioral Nudge Engine",
-    "emoji": "🧠",
-    "color": "#FF8A65",
-    "description": "Behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and success.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "product",
-    "name": "Feedback Synthesizer",
-    "emoji": "💬",
-    "color": "blue",
-    "description": "Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights. Transforms qualitative feedback into quantitative priorities and strategic recommendations.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "product",
-    "name": "Sprint Prioritizer",
-    "emoji": "🎯",
-    "color": "green",
-    "description": "Expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation. Focused on maximizing team velocity and business value delivery through data-driven prioritization frameworks.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "product",
-    "name": "Trend Researcher",
-    "emoji": "📊",
-    "color": "purple",
-    "description": "Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment. Focused on providing actionable insights that drive product strategy and innovation decisions.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Thought Leadership Development: Establishing brand as credible, knowledgeable expert voice in industry | Community Credibility Building: Earning trust and authority through authentic expertise-sharing and community participation",
+    "deliverables": "Strategic & Content Documents | Performance Analytics & KPIs"
   },
   {
     "category": "project-management",
@@ -311,8 +218,8 @@
     "emoji": "🧪",
     "color": "purple",
     "description": "Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused on managing A/B tests, feature experiments, and hypothesis validation through systematic experimentation and rigorous analysis.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Create statistically valid A/B tests and multi-variate experiments | Develop clear hypotheses with measurable success criteria",
+    "deliverables": "Experiment Design Document Template"
   },
   {
     "category": "project-management",
@@ -320,17 +227,8 @@
     "emoji": "📊",
     "color": "blue",
     "description": "Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment. Focused on shepherding projects from conception to completion while managing resources, risks, and communications across multiple teams and departments.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "project-management",
-    "name": "Senior Project Manager",
-    "emoji": "📊",
-    "color": "blue",
-    "description": "Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec requirements",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Plan and execute large-scale projects involving multiple teams and departments | Develop comprehensive project timelines with dependency mapping and critical path analysis",
+    "deliverables": "Project Charter Template"
   },
   {
     "category": "project-management",
@@ -338,8 +236,8 @@
     "emoji": "🎬",
     "color": "green",
     "description": "Expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination. Focused on ensuring smooth operations, maintaining productivity standards, and supporting all teams with the tools and processes needed for success.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Design and implement standard operating procedures for consistent quality | Identify and eliminate process bottlenecks that slow team productivity",
+    "deliverables": "Standard Operating Procedure Template"
   },
   {
     "category": "project-management",
@@ -347,8 +245,8 @@
     "emoji": "🎬",
     "color": "gold",
     "description": "Senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation, and multi-project portfolio management. Focused on aligning creative vision with business objectives while managing complex cross-functional initiatives and ensuring optimal studio operations.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Orchestrate multiple high-value projects with complex interdependencies and resource requirements | Align creative excellence with business objectives and market opportunities",
+    "deliverables": "Strategic Portfolio Plan Template"
   },
   {
     "category": "spatial-computing",
@@ -356,53 +254,8 @@
     "emoji": "🌐",
     "color": "metallic-blue",
     "description": "Native Swift and Metal specialist building high-performance 3D rendering systems and spatial computing experiences for macOS and Vision Pro",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "spatial-computing",
-    "name": "Terminal Integration Specialist",
-    "emoji": "💻",
-    "color": "green",
-    "description": "Terminal emulation, text rendering optimization, and SwiftTerm integration for modern Swift applications",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "spatial-computing",
-    "name": "visionOS Spatial Engineer",
-    "emoji": "🥽",
-    "color": "indigo",
-    "description": "Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "spatial-computing",
-    "name": "XR Cockpit Interaction Specialist",
-    "emoji": "🕶️",
-    "color": "orange",
-    "description": "Specialist in designing and developing immersive cockpit-based control systems for XR environments",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "spatial-computing",
-    "name": "XR Immersive Developer",
-    "emoji": "🕶️",
-    "color": "neon-cyan",
-    "description": "Expert WebXR and immersive technology developer with specialization in browser-based AR/VR/XR applications",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "spatial-computing",
-    "name": "XR Interface Architect",
-    "emoji": "🏛️",
-    "color": "neon-green",
-    "description": "Spatial interaction designer and interface strategist for immersive AR/VR/XR environments",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Implement instanced Metal rendering for 10k-100k nodes at 90fps | Create efficient GPU buffers for graph data (positions, colors, connections)",
+    "deliverables": "Metal Rendering Pipeline | Vision Pro Compositor Integration"
   },
   {
     "category": "specialized",
@@ -410,35 +263,8 @@
     "emoji": "🏛️",
     "color": "#2d5a27",
     "description": "Designs identity, authentication, and trust verification systems for autonomous AI agents operating in multi-agent environments. Ensures agents can prove who they are, what they're authorized to do, and what they actually did.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "specialized",
-    "name": "Agents Orchestrator",
-    "emoji": "🎼",
-    "color": "cyan",
-    "description": "Autonomous pipeline manager that orchestrates the entire development workflow. You are the leader of this process.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "specialized",
-    "name": "Cultural Intelligence Strategist",
-    "emoji": "🌍",
-    "color": "#FFA000",
-    "description": "CQ specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically across intersectional identities.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "specialized",
-    "name": "Data Analytics Reporter",
-    "emoji": "📊",
-    "color": "indigo",
-    "description": "Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical analysis, tracks KPIs, and provides strategic decision support through data visualization and reporting.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Design cryptographic identity systems for autonomous agents — keypair generation, credential issuance, identity attestation | Build agent authentication that works without human-in-the-loop for every call — agents must authenticate to each other programmatically",
+    "deliverables": "Agent Identity Schema | Trust Score Model | Delegation Chain Verification"
   },
   {
     "category": "specialized",
@@ -447,7 +273,7 @@
     "color": "#38a169",
     "description": "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries",
     "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "deliverables": "Dashboard Report | Territory Report"
   },
   {
     "category": "specialized",
@@ -455,8 +281,8 @@
     "emoji": "👨‍💻",
     "color": "purple",
     "description": "Expert developer advocate specializing in building developer communities, creating compelling technical content, optimizing developer experience (DX), and driving platform adoption through authentic engineering engagement. Bridges product and engineering teams with external developers.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Audit and improve the \"time to first API call\" or \"time to first success\" for your platform | Identify and eliminate friction in onboarding, SDKs, documentation, and error messages",
+    "deliverables": "Developer Onboarding Audit Framework"
   },
   {
     "category": "specialized",
@@ -464,8 +290,8 @@
     "emoji": "📝",
     "color": "orange",
     "description": "Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and semantic indexing",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Orchestrate multiple LSP clients (TypeScript, PHP, Go, Rust, Python) concurrently | Transform LSP responses into unified graph schema (nodes: files/symbols, edges: contains/imports/calls/refs)",
+    "deliverables": "graphd Core Architecture | LSP Client Orchestration"
   },
   {
     "category": "specialized",
@@ -474,7 +300,7 @@
     "color": "#d69e2e",
     "description": "AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters",
     "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "deliverables": "Email Reports | Distribution Schedules | Audit Trail"
   },
   {
     "category": "specialized",
@@ -483,7 +309,7 @@
     "color": "#2b6cb0",
     "description": "AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End) for internal live reporting",
     "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "deliverables": "File Monitoring | Metric Extraction | Data Persistence"
   },
   {
     "category": "support",
@@ -491,8 +317,8 @@
     "emoji": "📊",
     "color": "teal",
     "description": "Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical analysis, tracks KPIs, and provides strategic decision support through data visualization and reporting.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Develop comprehensive dashboards with real-time business metrics and KPI tracking | Perform statistical analysis including regression, forecasting, and trend identification",
+    "deliverables": "Executive Dashboard Template | Customer Segmentation Analysis"
   },
   {
     "category": "support",
@@ -500,8 +326,8 @@
     "emoji": "💰",
     "color": "green",
     "description": "Expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis. Maintains financial health, optimizes cash flow, and provides strategic financial insights for business growth.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Develop comprehensive budgeting systems with variance analysis and quarterly forecasting | Create cash flow management frameworks with liquidity optimization and payment timing",
+    "deliverables": "Comprehensive Budget Framework | Cash Flow Management System"
   },
   {
     "category": "support",
@@ -509,8 +335,8 @@
     "emoji": "🤖",
     "color": "orange",
     "description": "Expert infrastructure specialist focused on system reliability, performance optimization, and technical operations management. Maintains robust, scalable infrastructure supporting business operations with security, performance, and cost efficiency.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Maintain 99.9%+ uptime for critical services with comprehensive monitoring and alerting | Implement performance optimization strategies with resource right-sizing and bottleneck elimination",
+    "deliverables": "Comprehensive Monitoring System | Infrastructure as Code Framework"
   },
   {
     "category": "support",
@@ -518,8 +344,8 @@
     "emoji": "⚖️",
     "color": "red",
     "description": "Expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with relevant laws, regulations, and industry standards across multiple jurisdictions.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Monitor regulatory compliance across GDPR, CCPA, HIPAA, SOX, PCI-DSS, and industry-specific requirements | Develop privacy policies and data handling procedures with consent management and user rights implementation",
+    "deliverables": "GDPR Compliance Framework | Privacy Policy Generator"
   },
   {
     "category": "support",
@@ -527,8 +353,8 @@
     "emoji": "🛟",
     "color": "blue",
     "description": "Expert customer support specialist delivering exceptional customer service, issue resolution, and user experience optimization. Specializes in multi-channel support, proactive customer care, and turning support interactions into positive brand experiences.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Provide comprehensive support across email, chat, phone, social media, and in-app messaging | Maintain first response times under 2 hours with 85% first-contact resolution rates",
+    "deliverables": "Omnichannel Support Framework | Customer Support Analytics Dashboard"
   },
   {
     "category": "testing",
@@ -536,72 +362,9 @@
     "emoji": "♿",
     "color": "#0077B6",
     "description": "Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers — if it's not tested with a screen reader, it's not accessible.",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "testing",
-    "name": "API Tester",
-    "emoji": "🧪",
-    "color": "purple",
-    "description": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "testing",
-    "name": "Evidence Collector",
-    "emoji": "🤖",
-    "color": "orange",
-    "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everything",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "testing",
-    "name": "Performance Benchmarker",
-    "emoji": "⚡",
-    "color": "orange",
-    "description": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "testing",
-    "name": "Reality Checker",
-    "emoji": "🚨",
-    "color": "red",
-    "description": "Stops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelming proof for production readiness",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "testing",
-    "name": "Test Results Analyzer",
-    "emoji": "✅",
-    "color": "indigo",
-    "description": "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "testing",
-    "name": "Tool Evaluator",
-    "emoji": "🔧",
-    "color": "teal",
-    "description": "Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms for business use and productivity optimization",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
-  },
-  {
-    "category": "testing",
-    "name": "Workflow Optimizer",
-    "emoji": "🔄",
-    "color": "green",
-    "description": "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency",
-    "whenToUse": "Ver detalles completos en el modal",
-    "deliverables": "Prompt completo + guía de uso + ejemplos de código"
+    "whenToUse": "Evaluate interfaces against WCAG 2.2 AA criteria (and AAA where specified) | Test all four POUR principles: Perceivable, Operable, Understandable, Robust",
+    "deliverables": "Accessibility Audit Report Template"
   }
 ]
 
-// Total: 67 agentes
+// Total: 37 agentes
