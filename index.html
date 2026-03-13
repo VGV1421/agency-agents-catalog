@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Agency — 99 Agentes IA para tu Negocio</title>
+    <title>The Agency — Agentes IA para tu Negocio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,16 +22,6 @@
         .agent-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-        
-        .agent-card.expanded {
-            grid-column: span 2;
-        }
-        
-        @media (max-width: 768px) {
-            .agent-card.expanded {
-                grid-column: span 1;
-            }
         }
         
         .category-btn.active {
@@ -67,7 +57,7 @@
                     🎭 The Agency
                 </h1>
                 <p class="text-xl md:text-2xl font-light mb-4 opacity-90">
-                    99 Agentes IA Especializados para Transformar tu Negocio
+                    Agentes IA Especializados para Transformar tu Negocio
                 </p>
                 <p class="text-lg opacity-75 max-w-2xl mx-auto">
                     Un equipo completo de expertos en IA listos para trabajar: desde desarrolladores hasta diseñadores, de marketers a estrategas.
@@ -88,8 +78,8 @@
     <div class="bg-white shadow-md py-6">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div>
-                    <div class="text-3xl font-bold text-purple-600">99</div>
+                <div class="stats-agents">
+                    <div class="text-3xl font-bold text-purple-600">-</div>
                     <div class="text-sm text-gray-600">Agentes</div>
                 </div>
                 <div>
@@ -171,7 +161,7 @@
                     <ul class="text-left space-y-3 mb-8">
                         <li class="flex items-center gap-2">
                             <span class="text-green-300">✓</span>
-                            <span>Los 99 agentes completos</span>
+                            <span>Todos los agentes completos</span>
                         </li>
                         <li class="flex items-center gap-2">
                             <span class="text-green-300">✓</span>
@@ -227,7 +217,7 @@
         <div class="max-w-2xl mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold mb-4 text-gray-900">🚀 ¿Listo para Empezar?</h2>
             <p class="text-xl text-gray-600 mb-8">
-                Obtén acceso inmediato a los 99 agentes y transforma tu negocio con IA.
+                Obtén acceso inmediato a todos los agentes y transforma tu negocio con IA.
             </p>
             <div class="bg-gray-50 rounded-2xl p-8">
                 <p class="text-gray-700 mb-4">
@@ -267,37 +257,6 @@
     <script>
         let agents = [];
         
-        // Cargar agentes desde JSON
-        fetch('agents.json')
-            .then(r => r.json())
-            .then(data => {
-                agents = data;
-                renderCategoryFilters();
-                renderAgents();
-            })
-            .catch(e => {
-                console.error('Error loading agents:', e);
-                // Fallback a agentes básicos si falla
-                agents = [];
-                renderCategoryFilters();
-                renderAgents();
-            });
-        
-        function updateStats() {
-            const statsDiv = document.querySelector('.stats-bar');
-            if (statsDiv && agents.length > 0) {
-                statsDiv.innerHTML = `
-                    <div class="text-3xl font-bold text-purple-600">${agents.length}</div>
-                    <div class="text-sm text-gray-600">Agentes</div>
-                `;
-            }
-        }
-        
-        // Categorías dinámicas basadas en los agentes cargados
-        function getUniqueCategories() {
-            return [...new Set(agents.map(a => a.category))];
-        }
-        
         const categoryNames = {
             engineering: "💻 Engineering",
             design: "🎨 Design",
@@ -312,143 +271,35 @@
             integrations: "🔌 Integrations",
             strategy: "🧠 Strategy"
         };
-                deliverables: "Brand guidelines, identidad visual, voice & tone"
-            },
-            {
-                category: "design",
-                name: "Whimsy Injector",
-                emoji: "✨",
-                color: "fuchsia",
-                description: "Añade personalidad, delight y elementos juguetones a la marca.",
-                whenToUse: "Micro-interacciones, Easter eggs, hacer la marca memorable",
-                deliverables: "Elementos de delight, Easter eggs, gamificación"
-            },
-            {
-                category: "design",
-                name: "UX Architect",
-                emoji: "🏛️",
-                color: "slate",
-                description: "Arquitectura técnica, CSS systems, foundations para devs.",
-                whenToUse: "Fundamentos técnicos de diseño, CSS architecture",
-                deliverables: "Sistemas CSS, patrones de implementación, guías para devs"
-            },
 
-            // MARKETING
-            {
-                category: "marketing",
-                name: "Growth Hacker",
-                emoji: "📈",
-                color: "green",
-                description: "Crecimiento viral, adquisición de usuarios, funnels de conversión.",
-                whenToUse: "Crecer rápido, viral loops, optimizar conversión",
-                deliverables: "Estrategias de growth, experimentos A/B, funnels optimizados"
-            },
-            {
-                category: "marketing",
-                name: "Content Creator",
-                emoji: "📝",
-                color: "teal",
-                description: "Estrategia de contenidos, copy, storytelling multi-plataforma.",
-                whenToUse: "Contenido para redes, blogs, videos, podcasts",
-                deliverables: "Calendarios editoriales, copy, guiones de video"
-            },
-            {
-                category: "marketing",
-                name: "Instagram Curator",
-                emoji: "📸",
-                color: "rose",
-                description: "Especialista en Instagram: estética, Reels, Stories, Shopping.",
-                whenToUse: "Estrategia Instagram, crecimiento orgánico, ventas",
-                deliverables: "Feed aesthetic, Reels strategy, Instagram Shopping"
-            },
-            {
-                category: "marketing",
-                name: "TikTok Strategist",
-                emoji: "🎵",
-                color: "cyan",
-                description: "Viralidad en TikTok, trends, contenido short-form.",
-                whenToUse: "Crecer en TikTok, contenido viral, trends",
-                deliverables: "TikTok strategy, guiones virales, trend analysis"
-            },
-            {
-                category: "marketing",
-                name: "Reddit Community Builder",
-                emoji: "👽",
-                color: "orange",
-                description: "Construir comunidad en Reddit, AMAs, engagement auténtico.",
-                whenToUse: "Community building, AMAs, marketing en Reddit",
-                deliverables: "Reddit strategy, community guidelines, engagement plan"
-            },
-            {
-                category: "marketing",
-                name: "Twitter Engager",
-                emoji: "🐦",
-                color: "sky",
-                description: "Crecimiento en Twitter/X, hilos virales, engagement.",
-                whenToUse: "Personal branding, hilos virales, Twitter growth",
-                deliverables: "Twitter strategy, thread templates, engagement tactics"
-            },
-
-            // PRODUCT
-            {
-                category: "product",
-                name: "Sprint Prioritizer",
-                emoji: "🎯",
-                color: "green",
-                description: "Priorización de features, sprint planning, roadmaps.",
-                whenToUse: "Planificar sprints, priorizar backlog, roadmaps",
-                deliverables: "Sprint plans, roadmaps, priorización RICE/MoSCoW"
-            },
-            {
-                category: "product",
-                name: "Trend Researcher",
-                emoji: "📊",
-                color: "blue",
-                description: "Investigación de tendencias, market analysis, competencia.",
-                whenToUse: "Entender el mercado, tendencias, opportunity spotting",
-                deliverables: "Market research, trend reports, competitive analysis"
-            },
-            {
-                category: "product",
-                name: "Feedback Synthesizer",
-                emoji: "💬",
-                color: "purple",
-                description: "Analiza feedback de usuarios, identifica patrones, prioriza.",
-                whenToUse: "Analizar feedback, user interviews, soporte",
-                deliverables: "Feedback reports, pattern analysis, action items"
-            },
-
-            // SUPPORT
-            {
-                category: "support",
-                name: "Support Responder",
-                emoji: "🛟",
-                color: "blue",
-                description: "Respuestas a clientes, soporte, documentación.",
-                whenToUse: "Soporte al cliente, FAQs, help docs",
-                deliverables: "Respuestas de soporte, knowledge base, FAQs"
-            },
-            {
-                category: "support",
-                name: "Infrastructure Maintainer",
-                emoji: "⚙️",
-                color: "gray",
-                description: "Mantenimiento de infraestructura, monitoring, incidentes.",
-                whenToUse: "Mantenimiento systems, incident response, uptime",
-                deliverables: "Runbooks, incident reports, monitoring setup"
-            },
-            {
-                category: "support",
-                name: "Legal Compliance Checker",
-                emoji: "⚖️",
-                color: "slate",
-                description: "Compliance legal: GDPR, CCPA, términos, privacidad.",
-                whenToUse: "Compliance, términos de servicio, privacy policies",
-                deliverables: "Compliance audits, legal docs, policy templates"
-            },
-
-            // TESTING
-        // Los agentes se cargan dinámicamente desde agents.json
+        // Cargar agentes desde JSON
+        fetch('agents.json')
+            .then(r => r.json())
+            .then(data => {
+                agents = data;
+                updateStats();
+                renderCategoryFilters();
+                renderAgents();
+            })
+            .catch(e => {
+                console.error('Error loading agents:', e);
+                document.getElementById('agents-grid').innerHTML = 
+                    '<div class="col-span-full text-center py-12 text-red-500">Error cargando agentes. Recarga la página.</div>';
+            });
+        
+        function updateStats() {
+            const statsDiv = document.querySelector('.stats-agents');
+            if (statsDiv && agents.length > 0) {
+                statsDiv.innerHTML = `
+                    <div class="text-3xl font-bold text-purple-600">${agents.length}</div>
+                    <div class="text-sm text-gray-600">Agentes</div>
+                `;
+            }
+        }
+        
+        function getUniqueCategories() {
+            return [...new Set(agents.map(a => a.category))];
+        }
 
         function renderAgents(filter = "all") {
             const grid = document.getElementById("agents-grid");
@@ -458,6 +309,11 @@
                 ? agents 
                 : agents.filter(a => a.category === filter);
 
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center py-12 text-gray-500">No hay agentes en esta categoría</div>';
+                return;
+            }
+
             filtered.forEach(agent => {
                 const card = document.createElement("div");
                 card.className = "agent-card bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer hover:shadow-xl";
@@ -466,10 +322,10 @@
                         <div class="text-4xl">${agent.emoji}</div>
                         <div class="flex-1">
                             <h3 class="font-bold text-lg text-gray-900">${agent.name}</h3>
-                            <p class="text-sm text-gray-600 mt-1">${agent.description}</p>
+                            <p class="text-sm text-gray-600 mt-1 line-clamp-2">${agent.description}</p>
                             <div class="mt-3 flex items-center gap-2">
                                 <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
-                                    ${categoryNames[agent.category]}
+                                    ${categoryNames[agent.category] || agent.category}
                                 </span>
                             </div>
                         </div>
@@ -493,7 +349,7 @@
                         <div class="text-5xl">${agent.emoji}</div>
                         <div>
                             <h2 class="text-2xl font-bold text-gray-900">${agent.name}</h2>
-                            <span class="text-sm text-gray-500">${categoryNames[agent.category]}</span>
+                            <span class="text-sm text-gray-500">${categoryNames[agent.category] || agent.category}</span>
                         </div>
                     </div>
                     <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
@@ -532,17 +388,14 @@
             document.body.style.overflow = "";
         }
 
-        // Generar filtros de categoría dinámicamente
         function renderCategoryFilters() {
             const filtersDiv = document.getElementById("category-filters");
             const categories = getUniqueCategories();
             
-            // Mantener el botón "Todos"
             const allBtn = filtersDiv.querySelector('[data-category="all"]');
             filtersDiv.innerHTML = '';
             filtersDiv.appendChild(allBtn);
             
-            // Añadir botones por categoría
             categories.forEach(cat => {
                 const btn = document.createElement("button");
                 btn.className = "category-btn px-4 py-2 rounded-full text-sm font-medium transition border border-purple-200";
@@ -551,10 +404,8 @@
                 filtersDiv.appendChild(btn);
             });
             
-            // Actualizar contador total
             document.getElementById("total-count").textContent = agents.length;
             
-            // Re-attach event listeners
             document.querySelectorAll(".category-btn").forEach(btn => {
                 btn.addEventListener("click", () => {
                     document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
@@ -563,52 +414,10 @@
                 });
             });
         }
-        
-        // Re-renderizar función con soporte dinámico
-        function renderAgents(filter = "all") {
-            const grid = document.getElementById("agents-grid");
-            grid.innerHTML = "";
 
-            const filtered = filter === "all" 
-                ? agents 
-                : agents.filter(a => a.category === filter);
-
-            if (filtered.length === 0) {
-                grid.innerHTML = '<div class="col-span-full text-center py-12 text-gray-500">No hay agentes en esta categoría</div>';
-                return;
-            }
-
-            filtered.forEach(agent => {
-                const card = document.createElement("div");
-                card.className = "agent-card bg-white rounded-xl p-6 shadow-md border border-gray-100 cursor-pointer hover:shadow-xl";
-                card.innerHTML = `
-                    <div class="flex items-start gap-4">
-                        <div class="text-4xl">${agent.emoji}</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-lg text-gray-900">${agent.name}</h3>
-                            <p class="text-sm text-gray-600 mt-1">${agent.description}</p>
-                            <div class="mt-3 flex items-center gap-2">
-                                <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
-                                    ${categoryNames[agent.category] || agent.category}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="mt-4 text-purple-600 text-sm font-medium hover:text-purple-700 flex items-center gap-1">
-                        Ver detalles <span>→</span>
-                    </button>
-                `;
-                card.addEventListener("click", () => openModal(agent));
-                grid.appendChild(card);
-            });
-        }
-
-        // Close modal on overlay click
         document.getElementById("modal").addEventListener("click", (e) => {
             if (e.target.id === "modal") closeModal();
         });
     </script>
-</body>
-</html>
 </body>
 </html>
